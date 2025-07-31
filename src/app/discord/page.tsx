@@ -1,8 +1,8 @@
 "use client"
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-
 import { DiscordReviews } from "@/components/discord-reviews";
+import { DiscordCommunityCard } from "@/components/discord-community-card";
 
  interface Review {
    id: number;
@@ -137,15 +137,16 @@ export default function DiscordPage() {
             Unser Server bietet eine strenge Moderation, klare Regeln und eine warmherzige Community.
           </p>
           
+          {/* Discord Widget */}
+          <div className="max-w-md mx-auto mb-12">
+            <DiscordCommunityCard />
+          </div>
+          
           {/* Server Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto mb-12">
             <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm border border-slate-200/50 dark:border-slate-700/50 rounded-xl p-6 text-center shadow-lg">
-              <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">1,000+</div>
+              <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">95</div>
               <div className="text-sm text-slate-600 dark:text-slate-300">Mitglieder</div>
-            </div>
-            <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm border border-slate-200/50 dark:border-slate-700/50 rounded-xl p-6 text-center shadow-lg">
-              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">24/7</div>
-              <div className="text-sm text-slate-600 dark:text-slate-300">Moderation</div>
             </div>
             <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm border border-slate-200/50 dark:border-slate-700/50 rounded-xl p-6 text-center shadow-lg">
               <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">5.0</div>
@@ -205,7 +206,7 @@ export default function DiscordPage() {
               </div>
               <h3 className="font-semibold text-lg text-slate-900 dark:text-white mb-3">Strenge Moderation</h3>
               <p className="text-slate-600 dark:text-slate-300">
-                Unser Team überwacht den Server rund um die Uhr und sorgt für einen respektvollen Umgang. 
+                Unser Team überwacht den Server sorgfältig und sorgt für einen respektvollen Umgang. 
                 Bedrohungen werden proaktiv abgewehrt.
               </p>
             </div>
@@ -244,7 +245,7 @@ export default function DiscordPage() {
               </div>
               <h3 className="font-semibold text-lg text-slate-900 dark:text-white mb-3">Aktive Community</h3>
               <p className="text-slate-600 dark:text-slate-300">
-                Über 1.000 Mitglieder, die sich gegenseitig unterstützen und austauschen. 
+                Über 95 Mitglieder, die sich gegenseitig unterstützen und austauschen. 
                 Es ist immer etwas los und neue Freunde warten auf dich.
               </p>
             </div>
@@ -305,7 +306,7 @@ export default function DiscordPage() {
         {/* Server Rules Preview */}
         <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm border border-slate-200/50 dark:border-slate-700/50 rounded-2xl p-8 shadow-xl mb-16">
           <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-8 text-center">Unsere wichtigsten Regeln</h3>
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -329,6 +330,8 @@ export default function DiscordPage() {
                   <p className="text-sm text-slate-600 dark:text-slate-300">Nur familienfreundliche und angemessene Inhalte</p>
                 </div>
               </div>
+            </div>
+            <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -340,8 +343,6 @@ export default function DiscordPage() {
                   <p className="text-sm text-slate-600 dark:text-slate-300">Schutz vor Ausbeutung und unangemessenen Kontakten</p>
                 </div>
               </div>
-            </div>
-            <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -350,9 +351,11 @@ export default function DiscordPage() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 dark:text-white">Aktive Moderation</h4>
-                  <p className="text-sm text-slate-600 dark:text-slate-300">24/7 Überwachung durch unser Moderationsteam</p>
+                  <p className="text-sm text-slate-600 dark:text-slate-300">Sorgfältige Überwachung durch unser Moderationsteam</p>
                 </div>
               </div>
+            </div>
+            <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
