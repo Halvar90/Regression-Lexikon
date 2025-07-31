@@ -38,7 +38,7 @@ npm start
 ## Deployment
 
 Das Projekt wird automatisch auf Railway deployed:
-- **URL:** https://regression-lexikon-production.up.railway.app
+- **URL:** https://regression-lexikon.de
 - **Repository:** https://github.com/Halvar90/Regression-Lexikon
 
 ## Lizenz
