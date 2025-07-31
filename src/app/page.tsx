@@ -54,7 +54,7 @@ export default function HomePage() {
             </h1>
             
             <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
-              Ein wissenschaftlich fundierter, respektvoller und umfassender Überblick über die verschiedenen Facetten von Alters- und Pet-Regression.
+              Ein sorgfältig recherchierter, respektvoller und umfassender Überblick über die verschiedenen Facetten von Alters- und Pet-Regression.
             </p>
           </div>
         </div>

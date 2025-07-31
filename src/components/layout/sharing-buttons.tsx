@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Twitter, MessageCircle, Link, Check } from 'lucide-react';
+import { Twitter, MessageCircle, Link, Check, Instagram } from 'lucide-react';
 import { Button } from '../ui/button';
 import { createFullUrl } from '@/lib/config';
 
@@ -11,6 +11,7 @@ interface SharingButtonsProps {
 
 export function SharingButtons({ slug }: SharingButtonsProps) {
   const [copied, setCopied] = useState(false);
+  const [instagramCopied, setInstagramCopied] = useState(false);
   
   // Erstelle die volle URL der Seite
   const currentUrl = createFullUrl(slug);
@@ -26,6 +27,35 @@ export function SharingButtons({ slug }: SharingButtonsProps) {
   const shareOnReddit = () => {
     const redditUrl = `https://reddit.com/submit?url=${encodeURIComponent(currentUrl)}&title=${encodeURIComponent('Interessanter Artikel über Regression')}`;
     window.open(redditUrl, '_blank', 'width=600,height=400');
+  };
+
+  // Teilen auf Instagram
+  const shareOnInstagram = async () => {
+    const text = `Schau dir diesen Artikel über Regression an: ${currentUrl}`;
+    
+    try {
+      // Kopiere den Text in die Zwischenablage
+      await navigator.clipboard.writeText(text);
+      setInstagramCopied(true);
+      
+      // Öffne Instagram in neuem Tab
+      window.open('https://instagram.com', '_blank');
+      
+      // Reset nach 3 Sekunden
+      setTimeout(() => setInstagramCopied(false), 3000);
+    } catch (err) {
+      console.error('Fehler beim Kopieren für Instagram:', err);
+      // Fallback für ältere Browser
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      setInstagramCopied(true);
+      window.open('https://instagram.com', '_blank');
+      setTimeout(() => setInstagramCopied(false), 3000);
+    }
   };
   
   // Link kopieren
@@ -63,6 +93,22 @@ export function SharingButtons({ slug }: SharingButtonsProps) {
           >
             <Twitter className="w-4 h-4" />
             <span className="hidden sm:inline">Auf X teilen</span>
+          </Button>
+          
+          <Button
+            onClick={shareOnInstagram}
+            variant="outline"
+            size="sm"
+            className={`flex items-center gap-2 transition-colors ${
+              instagramCopied 
+                ? 'bg-pink-50 dark:bg-pink-950 border-pink-300 dark:border-pink-700 text-pink-700 dark:text-pink-300'
+                : 'hover:bg-pink-50 dark:hover:bg-pink-950 hover:border-pink-300 dark:hover:border-pink-700'
+            }`}
+          >
+            <Instagram className="w-4 h-4" />
+            <span className="hidden sm:inline">
+              {instagramCopied ? 'Kopiert!' : 'Auf Instagram teilen'}
+            </span>
           </Button>
           
           <Button

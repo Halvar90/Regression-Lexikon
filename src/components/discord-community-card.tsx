@@ -150,6 +150,7 @@ export function DiscordCommunityCard() {
           <div className="text-center">
             <div className="text-2xl font-bold">{discordData.disboard?.member_count || '80+'}</div>
             <div className="text-sm text-purple-100">Mitglieder</div>
+            <div className="text-xs text-purple-200 opacity-75">(Gesamt)</div>
           </div>
         </div>
         
@@ -169,10 +170,13 @@ export function DiscordCommunityCard() {
            </div>
          )}
 
-                   {/* Online Members - Zwei Reihen mit Teddy als Owner */}
+                   {/* Online Members - Live-Daten von Discord */}
           {realMembers.length > 0 && (
             <div className="mb-4">
-              <p className="text-sm text-purple-100 mb-3">Alle Online-Mitglieder ({onlineCount}):</p>
+              <p className="text-sm text-purple-100 mb-3">
+                Live Online-Mitglieder ({onlineCount}):
+                <span className="text-xs text-purple-200 opacity-75 ml-2">🟢 Echte Discord-Daten</span>
+              </p>
               <div className="max-h-40 overflow-y-auto bg-white/5 rounded-lg p-2">
                                  <div className="grid grid-cols-2 gap-1">
                    {realMembers

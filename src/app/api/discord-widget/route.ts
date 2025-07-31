@@ -19,12 +19,12 @@ export async function GET() {
 
     const discordData = await discordResponse.json()
     
-         // Echte Disboard-Daten (basierend auf Screenshot)
+         // Statische Disboard-Daten (da Live-API nicht verfügbar)
      const disboardData = {
        name: "Little Haven",
        description: "Der sicherste Hafen für Age- und Petregression",
        icon: "https://cdn.discordapp.com/icons/1270678011594670121/1270678011594670121.webp?size=96",
-       member_count: 93,
+       member_count: 93, // Statischer Wert - echte Zahl variiert
        premium_count: 0,
        tags: ["SFW", "CGL", "SAFEPLACE", "LITTLESPACE", "AGEREGRESSION"],
        language: "de",
