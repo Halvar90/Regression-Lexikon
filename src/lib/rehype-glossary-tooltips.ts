@@ -2,6 +2,7 @@ import { visit } from 'unist-util-visit';
 // import { toString } from 'hast-util-from-string'; // Nicht verwendet
 import type { Plugin } from 'unified';
 import type { Root, Text, Element } from 'hast';
+import type { Parent } from 'unist';
 
 interface GlossaryData {
   [key: string]: string;
@@ -32,8 +33,8 @@ const rehypeGlossaryTooltips: Plugin<[RehypeGlossaryTooltipsOptions], Root> = (o
   });
 
   return (tree) => {
-    visit(tree, 'text', (node: Text, index: number, parent: Element) => {
-      if (!parent || parent.tagName === 'code' || parent.tagName === 'pre') {
+    visit(tree, 'text', (node: Text, index: number | undefined, parent: Parent | undefined) => {
+      if (!parent || (parent as Element).tagName === 'code' || (parent as Element).tagName === 'pre') {
         // Überspringe Code-Blöcke
         return;
       }
@@ -87,7 +88,7 @@ const rehypeGlossaryTooltips: Plugin<[RehypeGlossaryTooltipsOptions], Root> = (o
       }
 
       // Ersetze den ursprünglichen Text-Node durch die neuen Kinder
-      if (modified) {
+      if (modified && index !== undefined) {
         parent.children.splice(index, 1, ...newChildren);
         return index + newChildren.length; // Überspringe die neuen Kinder
       }
