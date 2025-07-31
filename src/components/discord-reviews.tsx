@@ -33,7 +33,7 @@ export function DiscordReviews({ reviews }: DiscordReviewsProps) {
           </CardHeader>
           <CardContent>
             <blockquote className="text-sm leading-relaxed text-muted-foreground">
-              "{review.comment}"
+              &ldquo;{review.comment}&rdquo;
             </blockquote>
           </CardContent>
         </Card>

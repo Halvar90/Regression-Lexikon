@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Card, CardTitle, CardDescription } from '@/components/ui/card';
 import {
   BookOpen, BrainCircuit, Users, Heart, Shield, GitFork, Eye, UserCheck, MessageCircle,
   Scale, Info, HelpCircle, LifeBuoy, PawPrint, Milestone, Book, Sparkles, Files
@@ -72,7 +72,7 @@ export default function HomePage() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {items.map((item, index) => (
+              {items.map((item) => (
                 <Link href={item.href} key={item.titel} className="group">
                   <Card className="relative h-full bg-white/70 dark:bg-slate-800/70 border border-slate-200/50 dark:border-slate-700/50 rounded-2xl p-6 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-slate-900/50 backdrop-blur-sm group-hover:bg-white/90 dark:group-hover:bg-slate-800/90 overflow-hidden">
                     {/* Gradient Border Effect */}

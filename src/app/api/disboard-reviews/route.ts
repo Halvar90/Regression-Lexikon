@@ -106,9 +106,9 @@ function extractReviewsFromHTML(html: string) {
       const commentMatch = reviewHtml.match(/<p[^>]*class="[^"]*comment[^"]*"[^>]*>([^<]+)<\/p>/i)
       const comment = commentMatch ? commentMatch[1].trim() : "Tolle Community!"
       
-      // Extrahiere Datum
+      // Extrahiere Datum (nicht verwendet, aber für zukünftige Verwendung)
       const dateMatch = reviewHtml.match(/<span[^>]*class="[^"]*date[^"]*"[^>]*>([^<]+)<\/span>/i)
-      const date = dateMatch ? dateMatch[1].trim() : new Date().toISOString().split('T')[0]
+      // const date = dateMatch ? dateMatch[1].trim() : new Date().toISOString().split('T')[0]
       
              reviews.push({
          id: reviews.length + 1,

@@ -1,12 +1,13 @@
 "use client"
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+// Card-Komponenten werden nicht verwendet, aber für zukünftige Verwendung importiert
+// import {
+//   Card,
+//   CardContent,
+//   CardHeader,
+//   CardTitle,
+// } from "@/components/ui/card";
 import { DiscordCommunityCard } from "@/components/discord-community-card";
 import { DiscordReviews } from "@/components/discord-reviews";
 

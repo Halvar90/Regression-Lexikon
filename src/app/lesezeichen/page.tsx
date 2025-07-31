@@ -10,7 +10,7 @@ import { useRouter } from 'next/navigation';
 
 export default function LesezeichenPage() {
   const { bookmarks, removeBookmark } = useBookmarks();
-  const router = useRouter();
+  // const router = useRouter(); // Für zukünftige Navigation
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);

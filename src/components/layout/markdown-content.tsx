@@ -177,7 +177,7 @@ export function MarkdownContent({ content, slug }: MarkdownContentProps) {
             ),
             // Glossar-Tooltips für span-Elemente mit data-glossary-term
             span: ({ children, ...props }) => {
-              const glossaryTerm = (props as any)['data-glossary-term'] as string;
+              const glossaryTerm = (props as Record<string, unknown>)['data-glossary-term'] as string;
               
               if (glossaryTerm && glossaryData[glossaryTerm]) {
                 return (

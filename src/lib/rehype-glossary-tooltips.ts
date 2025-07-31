@@ -1,5 +1,5 @@
 import { visit } from 'unist-util-visit';
-import { toString } from 'hast-util-from-string';
+// import { toString } from 'hast-util-from-string'; // Nicht verwendet
 import type { Plugin } from 'unified';
 import type { Root, Text, Element } from 'hast';
 
@@ -40,11 +40,11 @@ const rehypeGlossaryTooltips: Plugin<[RehypeGlossaryTooltipsOptions], Root> = (o
 
       const text = node.value;
       let modified = false;
-      let newChildren: (Text | Element)[] = [];
+      const newChildren: (Text | Element)[] = [];
       let lastIndex = 0;
 
       // Durchlaufe alle Glossar-Begriffe und suche nach Übereinstimmungen
-      for (const [lowerTerm, originalTerm] of glossaryMap) {
+      for (const [, originalTerm] of glossaryMap) {
         const regex = new RegExp(`\\b${escapeRegExp(originalTerm)}\\b`, 'gi');
         let match;
 
