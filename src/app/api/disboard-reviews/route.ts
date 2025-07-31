@@ -96,7 +96,7 @@ function extractReviewsFromHTML(html: string) {
       
       // Extrahiere Benutzername
       const usernameMatch = reviewHtml.match(/<span[^>]*class="[^"]*username[^"]*"[^>]*>([^<]+)<\/span>/i)
-      const username = usernameMatch ? usernameMatch[1].trim() : `User${reviews.length + 1}`
+      const username: string = usernameMatch ? usernameMatch[1].trim() : `User${reviews.length + 1}`
       
       // Extrahiere Bewertung
       const ratingMatch = reviewHtml.match(/<span[^>]*class="[^"]*rating[^"]*"[^>]*>(\d+)<\/span>/i)
