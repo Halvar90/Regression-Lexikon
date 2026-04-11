@@ -1,0 +1,109 @@
+---
+// SOSGroundingTool.astro - Interaktive Soforthilfe
+---
+
+<div class="sos-tool" id="sos-container">
+  <div id="sos-intro" class="sos-step active">
+    <h2>SOS Notfall-Hilfe</h2>
+    <p>Atme tief durch. Du bist hier sicher. Dieses Tool hilft dir, jetzt sofort wieder stabil und "erwachsen" zu werden.</p>
+    <button class="sos-start-btn" id="start-grounding">Grounding starten</button>
+  </div>
+
+  <div id="grounding-step-1" class="sos-step">
+    <p class="step-counter">Schritt 1 von 4</p>
+    <h3>Sieh dich um.</h3>
+    <p>Nenne <strong>5 Dinge</strong>, die du gerade im Raum siehst (z.B. eine Lampe, ein Fenster...).</p>
+    <button class="sos-next">Erledigt</button>
+  </div>
+
+  <div id="grounding-step-2" class="sos-step">
+    <p class="step-counter">Schritt 2 von 4</p>
+    <h3>Spüre deinen Körper.</h3>
+    <p>Nenne <strong>4 Dinge</strong>, die du gerade fühlst (z.B. den Stoff deines Shirts, die harten Stuhlbeine, den Wind auf der Haut...).</p>
+    <button class="sos-next">Erledigt</button>
+  </div>
+
+  <div id="grounding-step-3" class="sos-step">
+    <p class="step-counter">Schritt 3 von 4</p>
+    <h3>Aktiviere deine Logik.</h3>
+    <p>Löse diese kleine Aufgabe im Kopf:</p>
+    <p class="math-task">Was ist 100 minus 7? Und was ist das Ergebnis minus 7?</p>
+    <button class="sos-next">Ich habe die Lösung</button>
+  </div>
+
+  <div id="grounding-step-4" class="sos-step">
+    <p class="step-counter">Schritt 4 von 4</p>
+    <h3>Kategorien bilden.</h3>
+    <p>Nenne <strong>3 Gemüsesorten</strong> und <strong>3 Automarken</strong> (oder Länder), die mit dem Buchstaben "B" beginnen.</p>
+    <button class="sos-next">Erledigt</button>
+  </div>
+
+  <div id="grounding-final" class="sos-step">
+    <h3>Du bist wieder hier.</h3>
+    <p>Spüre deine Füße fest auf dem Boden. Du bist erwachsen und hast die Kontrolle über deine Situation.</p>
+    <div class="final-advice">
+      <p><strong>War die Situation toxisch oder NSFW?</strong> Wenn ja: Blockiere die Person jetzt sofort. Du schuldest niemandem eine Erklärung für deinen Schutz.</p>
+    </div>
+    <button class="reset-btn" onclick="location.reload()">Ich bin bereit</button>
+  </div>
+</div>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    let currentStep = 0;
+    const container = document.getElementById('sos-container');
+    
+    if (container) {
+      const steps = container.querySelectorAll('.sos-step');
+      const startBtn = document.getElementById('start-grounding');
+      const nextBtns = container.querySelectorAll('.sos-next');
+
+      if (startBtn && steps.length > 0) {
+        startBtn.addEventListener('click', () => {
+          steps[0].classList.remove('active');
+          currentStep = 1;
+          if(steps[currentStep]) steps[currentStep].classList.add('active');
+        });
+      }
+
+      nextBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          if(steps[currentStep]) steps[currentStep].classList.remove('active');
+          currentStep++;
+          if(steps[currentStep]) steps[currentStep].classList.add('active');
+        });
+      });
+    }
+  });
+</script>
+
+<style>
+  .sos-tool {
+    background: #0a0a0c;
+    border: 2px solid #ff4d4d;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(255, 77, 77, 0.2);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .sos-step { display: none; }
+  .sos-step.active { display: block; animation: slideIn 0.3s ease-out; }
+  
+  .step-counter { font-size: 0.8rem; text-transform: uppercase; color: #ff4d4d; font-weight: bold; margin-bottom: 1rem; }
+  .sos-tool h3 { color: white; margin-bottom: 1.5rem; margin-top: 0; }
+  .math-task { font-size: 1.2rem; background: #1a1a1e; padding: 1rem; border-radius: 0.5rem; margin: 1rem 0; }
+  
+  .sos-start-btn { background: #ff4d4d; color: white; padding: 1.2rem 2.5rem; border: none; border-radius: 0.5rem; font-weight: bold; cursor: pointer; font-size: 1.1rem; }
+  .sos-next { background: var(--sl-color-accent); color: white; padding: 0.8rem 2rem; border: none; border-radius: 0.4rem; cursor: pointer; margin-top: 1.5rem; font-size: 1rem;}
+  
+  .final-advice { background: rgba(255, 77, 77, 0.1); border: 1px solid #ff4d4d; padding: 1.5rem; border-radius: 0.5rem; margin: 1.5rem 0; text-align: left; }
+  
+  .reset-btn { background: transparent; border: 1px solid var(--sl-color-gray-4); color: var(--sl-color-gray-2); padding: 0.8rem 2rem; border-radius: 0.4rem; cursor: pointer; margin-top: 1rem;}
+  .reset-btn:hover { background: var(--sl-color-gray-6); }
+
+  @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+</style>

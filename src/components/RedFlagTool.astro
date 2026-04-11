@@ -1,0 +1,193 @@
+---
+// RedFlagTool.astro - Der ultimative Beziehungs- & Sicherheitscheck (Vollständige Version)
+---
+
+<div class="safety-tool">
+  <div id="check-list">
+    <h3>Der große Sicherheits-Check</h3>
+    <p class="instr">Hake alles an, was du in der Beziehung oder im Kontakt erlebst. Dieses Tool bewertet sowohl allgemeine Toxizität als auch spezifische Gefahren für dein Little-Self.</p>
+
+    <div class="flag-group">
+      <p class="group-label">🟡 Stufe 1: Warnsignale & Emotionale Manipulation</p>
+      <!-- Aus Version 1 -->
+      <label><input type="checkbox" class="flag" data-weight="1"> <span>Die Person will sofort dein "Caregiver" sein, ohne dich zu kennen.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="1"> <span>Die Person antwortet sehr fordernd oder beleidigt, wenn du nicht sofort reagierst.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="2"> <span>Die Person möchte extrem schnell auf private Messenger (Telegram, Snapchat) wechseln.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="2"> <span>Die Person nutzt dich als "seelischen Mülleimer" (Trauma Dumping).</span></label>
+      <label><input type="checkbox" class="flag" data-weight="1"> <span>Die Person drängt darauf, ein Bild von deinem Gesicht zu sehen ("um dich besser vorzustellen").</span></label>
+      <label><input type="checkbox" class="flag" data-weight="2"> <span>Die Person fragt ständig nach deinem Beziehungsstatus im echten Leben.</span></label>
+      <!-- Aus Version 2 -->
+      <label><input type="checkbox" class="flag" data-weight="2"> <span><strong>Gaslighting:</strong> Die Person behauptet, Dinge seien nie passiert oder du würdest dir alles nur einbilden.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="1"> <span><strong>Schuldumkehr:</strong> Wenn du ein Problem ansprichst, bist am Ende immer du schuld oder "zu empfindlich".</span></label>
+      <label><input type="checkbox" class="flag" data-weight="2"> <span><strong>Stimmungsschwankungen:</strong> Du hast das Gefühl, ständig auf Eierschalen zu laufen, um die Person nicht zu reizen.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="2"> <span><strong>Abwertung:</strong> Die Person macht Witze auf deine Kosten oder kritisiert dich vor anderen.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="1"> <span><strong>Liebesentzug:</strong> Die Person straft dich mit Schweigen (Silent Treatment), wenn du nicht tust, was sie will.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="1"> <span><strong>"Love Bombing":</strong> Die Person überhäuft dich sofort mit Komplimenten und Zuneigung.</span></label>
+    </div>
+
+    <div class="flag-group">
+      <p class="group-label">🟠 Stufe 2: Kontrolle, Isolation & Grooming-Verdacht</p>
+      <!-- Aus Version 1 -->
+      <label><input type="checkbox" class="flag" data-weight="5"> <span>Die Person macht sich über SFW-Regeln lustig oder nennt sie "unnötig streng".</span></label>
+      <label><input type="checkbox" class="flag" data-weight="8"> <span>Die Person verlangt deine genaue Adresse, Schule oder Arbeitsplatz-Informationen.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="5"> <span>Die Person kritisiert deine Freunde oder die Community, um dich zu isolieren.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="5"> <span>Die Person möchte "geheime" Gespräche führen, von denen niemand erfahren darf.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="7"> <span>Die Person behauptet, sie sei der "einzige Caregiver, der dich wirklich versteht".</span></label>
+      <label><input type="checkbox" class="flag" data-weight="5"> <span>Die Person droht damit, sich selbst etwas anzutun, wenn du den Kontakt abbrichst.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="7"> <span>Die Person versucht dich zu überreden, keine Therapie zu machen ("Ich helfe dir besser").</span></label>
+      <!-- Aus Version 2 -->
+      <label><input type="checkbox" class="flag" data-weight="5"> <span><strong>Überwachung:</strong> Die Person kontrolliert dein Handy, deine Mails oder verlangt deine Passwörter.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="3"> <span><strong>Finanzielle Kontrolle:</strong> Die Person will über dein Geld bestimmen oder verlangt Rechenschaft über jeden Cent.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="4"> <span><strong>Entscheidungszwang:</strong> Die Person trifft wichtige Entscheidungen für dich, ohne dich zu fragen.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="5"> <span><strong>Eifersucht:</strong> Krankhafte Eifersucht wird als "große Liebe" getarnt.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="3"> <span>Die Person verlangt Geld, Geschenke oder "Subs" als Gegenleistung für Zuwendung.</span></label>
+    </div>
+
+    <div class="flag-group agere-focus">
+      <p class="group-label">🔵 Stufe 3: Spezifische Agere-Gefahren (SFW-Bruch & Grenzverletzung)</p>
+      <!-- Aus Version 1 & 2 -->
+      <label><input type="checkbox" class="flag" data-weight="10"> <span>Die Person ignoriert ein klares "Nein" und nennt es "verspielt" oder "niedlich".</span></label>
+      <label><input type="checkbox" class="flag" data-weight="8"> <span>Die Person setzt dich unter Druck ("Wenn du mich magst, tust du das für mich").</span></label>
+      <label><input type="checkbox" class="flag" data-weight="5"> <span>Die Person akzeptiert deine Regression nur, wenn du dabei "niedlich" oder "ruhig" bist.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="5"> <span>Die Person wertet dich ab, wenn du dich nicht "klein genug" verhältst.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="8"> <span>Die Person behauptet, dass "nur sie" dich im Little Space kontrollieren kann.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="10"> <span>Die Person verlangt, dass du im Little Space Geheimnisse vor deinen Eltern/Partnern hast.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="8"> <span><strong>Outing-Erpressung:</strong> Die Person droht damit, dein Geheimnis (deine Regression) anderen zu verraten.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="5"> <span>Die Person nutzt deine Verletzlichkeit im Little Space aus, um dich zu Dingen zu überreden.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="10"> <span>Die Person verlangt, dass du "für sie" regredierst, auch wenn du dich nicht danach fühlst.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="10"> <span>Die Person ignoriert ein "Ich möchte gerade nicht regredieren" und versucht dich zu überreden.</span></label>
+    </div>
+
+    <div class="flag-group danger-zone">
+      <p class="group-label">🚨 Stufe 4: Absolute Gefahr & Straftatbestände (Sofort-Abbruch)</p>
+      <!-- Aus Version 1 & 2 (Sexualisierung & StGB) -->
+      <label><input type="checkbox" class="flag" data-weight="99"> <span>Die Person fragt nach Bildern von dir im Little Space (mit Schnuller, Gear, in Kleidung).</span></label>
+      <label><input type="checkbox" class="flag" data-weight="99"> <span>Die Person fragt nach deiner Unterwäsche oder was du im Bett trägst.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="99"> <span>Die Person schickt dir ungefragt NSFW-Inhalte oder explizite Bilder (§ 184 StGB).</span></label>
+      <label><input type="checkbox" class="flag" data-weight="99"> <span>Die Person verlangt sexuelle Handlungen von dir vor der Kamera (§ 176/184b oder § 177/184i StGB).</span></label>
+      <label><input type="checkbox" class="flag" data-weight="99"> <span>Die Person nutzt sexuelle Kosenamen ("sexy Little", "braves Mädchen/Junge" im Kink-Kontext).</span></label>
+      <label><input type="checkbox" class="flag" data-weight="99"> <span>Die Person spricht über sexuelle Vorlieben, Kinks oder "Bestrafungen" (Spanking, Disziplinierung).</span></label>
+      <label><input type="checkbox" class="flag" data-weight="99"> <span>Die Person möchte Agere mit BDSM, Ageplay oder ABDL-Kinks vermischen.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="99"> <span>Die Person behauptet, Regression sei "erst richtig gut, wenn es sexuell wird".</span></label>
+      <label><input type="checkbox" class="flag" data-weight="99"> <span>Die Person verlangt, dass du in der Regression Dinge tust, die dich sexuell unwohl fühlen lassen.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="99"> <span><strong>Körperliche Gewalt:</strong> Die Person schubst, schlägt oder hält dich fest (§ 223 StGB).</span></label>
+      <label><input type="checkbox" class="flag" data-weight="99"> <span><strong>Sexuelle Nötigung:</strong> Du wirst (online oder offline) zu sexuellen Handlungen gedrängt (§ 177 StGB).</span></label>
+      <label><input type="checkbox" class="flag" data-weight="99"> <span><strong>Stalking:</strong> Die Person verfolgt dich oder überwacht deinen Standort via GPS (§ 238 StGB).</span></label>
+      <label><input type="checkbox" class="flag" data-weight="99"> <span><strong>Erpressung:</strong> Die Person droht mit der Veröffentlichung privater Bilder (§ 201a / § 253 StGB).</span></label>
+      <label><input type="checkbox" class="flag" data-weight="99"> <span><strong>Drogen/Alkohol:</strong> Die Person bietet Substanzen an oder drängt dich dazu, um dich gefügiger zu machen.</span></label>
+      <label><input type="checkbox" class="flag" data-weight="99"> <span>Die Person möchte dich persönlich treffen und verlangt absolute Geheimhaltung vor deinem Umfeld.</span></label>
+    </div>
+
+    <button id="analyze-btn">Sicherheits-Analyse starten</button>
+  </div>
+
+  <div id="result-display" style="display: none;">
+    <div id="status-header"></div>
+    <div id="legal-warning" class="legal-box" style="display: none;"></div>
+    <div id="advice-content"></div>
+    <button id="reset-btn">Neuen Check starten</button>
+  </div>
+</div>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('analyze-btn');
+    const resetBtn = document.getElementById('reset-btn');
+    const checklist = document.getElementById('check-list');
+    const resultDisplay = document.getElementById('result-display');
+    const statusHeader = document.getElementById('status-header');
+    const legalWarning = document.getElementById('legal-warning');
+    const adviceContent = document.getElementById('advice-content');
+
+    function runAnalysis() {
+      const checkedFlags = document.querySelectorAll('.flag:checked');
+      let score = 0;
+      let criminalIncident = false;
+
+      checkedFlags.forEach(f => {
+        const w = parseInt(f.getAttribute('data-weight'));
+        if (w >= 99) criminalIncident = true;
+        score += w;
+      });
+
+      checklist.style.display = 'none';
+      resultDisplay.style.display = 'block';
+      legalWarning.style.display = 'none';
+
+      if (criminalIncident) {
+        statusHeader.innerHTML = "<h2>🚨 AKUTE GEFAHR / STRAFTAT</h2>";
+        statusHeader.className = "res-head toxic-bg";
+        legalWarning.style.display = 'block';
+        legalWarning.innerHTML = "<strong>Rechtlicher Hinweis:</strong> Hier liegen Anzeichen für schwere Straftaten vor (Körperverletzung, Nötigung, Missbrauch, Stalking oder Erpressung). Deine Sicherheit ist akut bedroht.";
+        adviceContent.innerHTML = "<p><strong>Handlung:</strong> Such dir sofort Hilfe. Vertraue dich einer Beratungsstelle an oder geh zur Polizei. Wenn du dich bedroht fühlst, wähle den Notruf 112/110. Sichere Beweise (Screenshots) und brich den Kontakt sicher ab.</p>";
+      } else if (score >= 20) {
+        statusHeader.innerHTML = "<h2>🚫 HOCHGRADIG TOXISCH & MANIPULATIV</h2>";
+        statusHeader.className = "res-head danger-bg";
+        legalWarning.style.display = 'block';
+        legalWarning.innerHTML = "Das ist ein systematischer Missbrauch von Macht und Vertrauen, oft ein Vorbote schwererer Übergriffe (Grooming).";
+        adviceContent.innerHTML = "<p><strong>Handlung:</strong> Diese Beziehung schadet deiner psychischen Gesundheit massiv. Plane deinen Rückzug, blockiere die Person und suche dir Unterstützung im Freundeskreis oder bei Beratungsstellen.</p>";
+      } else if (score >= 5) {
+        statusHeader.innerHTML = "<h2>⚠️ DEUTLICHE WARNSIGNALE</h2>";
+        statusHeader.className = "res-head warning-bg";
+        adviceContent.innerHTML = "<p>Es findet eine starke Kontrolle und Manipulation statt. Deine Autonomie und deine Grenzen (insbesondere SFW-Grenzen) werden untergraben. Überlege dir gut, ob diese Verbindung sicher ist.</p>";
+      } else if (score > 0) {
+        statusHeader.innerHTML = "<h2>🧐 BEOBACHTEN</h2>";
+        statusHeader.className = "res-head neutral-bg";
+        adviceContent.innerHTML = "<p>Es gibt ungesunde Verhaltensmuster. Setze klare Grenzen und beobachte sehr genau, ob diese respektiert werden. Gib keine privaten Informationen preis.</p>";
+      } else {
+        statusHeader.innerHTML = "<h2>✅ AKTUELL UNAUFFÄLLIG</h2>";
+        statusHeader.className = "res-head safe-bg";
+        adviceContent.innerHTML = "<p>Deine Beschreibung klingt nach einem respektvollen Umgang. Bleib dennoch immer achtsam und vertraue deinem Bauchgefühl.</p>";
+      }
+    }
+
+    function resetTool() {
+      const checkedFlags = document.querySelectorAll('.flag:checked');
+      checkedFlags.forEach(flag => flag.checked = false);
+      checklist.style.display = 'block';
+      resultDisplay.style.display = 'none';
+    }
+
+    if (btn) btn.addEventListener('click', runAnalysis);
+    if (resetBtn) resetBtn.addEventListener('click', resetTool);
+  });
+</script>
+
+<style>
+  .safety-tool { background: var(--sl-color-gray-6); padding: 2rem; border-radius: 1rem; border: 1px solid var(--sl-color-accent); }
+  .instr { font-size: 0.95rem; color: var(--sl-color-gray-3); margin-bottom: 2rem; line-height: 1.5; }
+  .flag-group { margin-bottom: 1.5rem; padding: 1.2rem; background: rgba(0,0,0,0.25); border-radius: 0.5rem; }
+  .group-label { font-weight: bold; margin-bottom: 1rem; color: var(--sl-color-accent); border-bottom: 1px solid var(--sl-color-gray-5); padding-bottom: 0.5rem; }
+  .agere-focus { border-left: 4px solid #6366f1; }
+  .danger-zone { border: 2px solid #800000; background: rgba(128, 0, 0, 0.1); }
+  
+  /* Verbesserte Ausrichtung für Checkboxen und mehrzeiligen Text */
+  label { 
+    display: flex; 
+    align-items: flex-start; /* Oben ausrichten */
+    margin: 1.2rem 0; 
+    cursor: pointer; 
+    font-size: 0.95rem; 
+    line-height: 1.5; 
+    gap: 15px; /* Abstand zwischen Checkbox und Text über Flexbox definieren */
+  }
+  input[type="checkbox"] { 
+    margin: 0; /* Margin entfernen, da gap verwendet wird */
+    margin-top: 0.2rem; /* Leichte Korrektur nach unten, abhängig von der font-size */
+    transform: scale(1.4); 
+    flex-shrink: 0; 
+  }
+  
+  #analyze-btn { width: 100%; padding: 1.2rem; background: var(--sl-color-accent); color: white; border: none; border-radius: 0.5rem; font-weight: bold; cursor: pointer; font-size: 1.1rem; }
+  
+  .res-head { padding: 1.5rem; border-radius: 0.5rem; text-align: center; margin-bottom: 1rem; }
+  .res-head h2 { font-size: 1.3rem; margin: 0; }
+  .legal-box { background: #331a00; border: 1px solid #ffcc00; color: #ffcc00; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1.5rem; font-size: 0.9rem; line-height: 1.5; }
+  .toxic-bg { background: #660000; color: white; border: 2px solid red; }
+  .danger-bg { background: #b33c00; color: white; }
+  .warning-bg { background: #856404; color: #fff3cd; }
+  .neutral-bg { background: #343a40; color: white; }
+  .safe-bg { background: #155724; color: #d4edda; }
+  
+  #reset-btn { margin-top: 2rem; background: none; border: 1px solid var(--sl-color-gray-4); color: var(--sl-color-gray-3); padding: 0.6rem 1.2rem; cursor: pointer; border-radius: 0.4rem; }
+</style>

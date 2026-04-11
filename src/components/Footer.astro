@@ -1,0 +1,38 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/Footer.astro';
+---
+
+<Default {...Astro.props}><slot /></Default>
+
+<div class="legal-footer">
+  <nav>
+    <a href="/impressum/">Impressum</a>
+    <a href="/datenschutz/">Datenschutz</a>
+  </nav>
+  <p>© 2026 – Regressions-Lexikon</p>
+</div>
+
+<style>
+  .legal-footer {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--sl-color-gray-5);
+    text-align: center;
+    font-size: var(--sl-text-xs);
+    color: var(--sl-color-gray-3);
+  }
+  .legal-footer nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .legal-footer a {
+    text-decoration: none;
+    color: var(--sl-color-gray-3);
+  }
+  .legal-footer a:hover {
+    color: var(--sl-color-accent);
+  }
+</style>
