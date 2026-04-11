@@ -73,6 +73,7 @@ export default defineConfig({
   {
     label: '7. Service',
     items: [
+      { label: 'Empfohlene Links', link: '/service/empfohlene-links' },
       { label: 'Notfall-Kontakte (DACH+)', link: '/notfall-kontakte' },
       { label: 'Quellenverzeichnis', link: '/quellen' },
     ],
