@@ -53,16 +53,26 @@ export default defineConfig({
     ],
   },
   {
-    label: '5. Miteinander & Umfeld',
+    label: '5. Rollen in der Regression',
+    items: [
+      { label: 'Der Caregiver', link: '/rollen/caregiver' },
+      { label: 'Das Little', link: '/rollen/little' },
+      { label: 'Der Flip', link: '/rollen/flip' },
+      { label: 'Der Owner', link: '/rollen/owner' },
+      { label: 'Der Handler', link: '/rollen/handler' },
+      { label: 'Der Babysitter', link: '/rollen/babysitter' },
+    ],
+  },
+  {
+    label: '6. Miteinander & Umfeld',
     items: [
       { label: 'Caregiving & Verantwortung', link: '/praxis/caregiving-dynamiken' },
       { label: 'In der Partnerschaft leben', link: '/community/partnerschaft' },
       { label: 'Stigma & Vorurteile', link: '/community/stigma-vorurteile' },
-     
     ],
   },
   {
-    label: '6. Wissen & Ethik',
+    label: '7. Wissen & Ethik',
     items: [
       { label: 'Häufige Fragen (FAQ)', link: '/grundlagen/faq' },
       { label: 'Ethik & Consent', link: '/sicherheit/ethik-leitfaden-consent' },
@@ -71,7 +81,7 @@ export default defineConfig({
     ],
   },
   {
-    label: '7. Service',
+    label: '8. Service',
     items: [
       { label: 'Empfohlene Links', link: '/service/empfohlene-links' },
       { label: 'Notfall-Kontakte (DACH+)', link: '/notfall-kontakte' },
@@ -79,7 +89,7 @@ export default defineConfig({
     ],
   },
   {
-    label: '8. Werkzeuge & Checklisten',
+    label: '9. Werkzeuge & Checklisten',
     items: [
       { label: 'Red-Flag-Check (Online)', link: '/interaktiv/red-flag-check' },
       { label: 'SOS: Grounding-Tool', link: '/interaktiv/sos-grounding' },

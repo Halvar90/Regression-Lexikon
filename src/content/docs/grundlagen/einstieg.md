@@ -22,7 +22,7 @@ Regression findet meist auf drei Ebenen gleichzeitig statt:
 In der Psychologie ist Regression ein bekanntes Konzept. Wir unterscheiden hier zwei wesentliche Formen:
 
 ### 1. Adaptive Regression (Freiwillig)
-Das ist die Form, die wir im "Little Space" suchen. Es ist ein bewusster Rückzug in einen sicheren Raum. Dein Nervensystem nutzt die Regression als **Werkzeug zur Selbstregulation**. Durch das Spiel und das Ablegen von Verantwortung kann sich dein Körper von chronischem Stress erholen.
+Das ist die Form, die wir im Little Space suchen. Es ist ein bewusster Rückzug in einen sicheren Raum. Dein Nervensystem nutzt die Regression als **Werkzeug zur Selbstregulation**. Durch das Spiel und das Ablegen von Verantwortung kann sich dein Körper von chronischem Stress erholen. Mehr dazu: [Coping-Mechanismus](/psychologie/coping-mechanismus)
 
 ### 2. Defensive Regression (Unfreiwillig)
 Hier reagiert die Psyche auf eine Bedrohung oder ein Trauma. Wenn der Druck im Hier und Jetzt zu groß wird, "flüchtet" der Geist in einen Zustand, in dem er früher einmal Schutz gefunden hat. Das passiert oft automatisch und kann im ersten Moment beängstigend sein, ist aber letztlich ein **Überlebensmechanismus**.
@@ -47,7 +47,7 @@ Um Missverständnisse zu vermeiden, ist es wichtig, die Altersregression von and
 Beim Rollenspiel (wie z. B. beim Theater oder Cosplay) entscheidest du dich bewusst dafür, eine Figur darzustellen. Du *spielst* ein Kind. Bei der Regression hingegen *fühlst* du dich wie ein Kind. Die Veränderung passiert auf einer tiefen, neurologischen Ebene. Es ist kein Kostüm, das man anzieht, sondern ein Zustand, in den man hineingleitet.
 
 ### 2. Keine Sexualität (Strikte SFW-Grenze)
-Dies ist die wichtigste Unterscheidung: Altersregression in diesem Sinne ist **niemals sexuell**. Konzepte wie "Ageplay" oder "ABDL" stammen aus der Kink- und BDSM-Szene und basieren auf sexuellem Konsens und Rollenspielen zwischen Erwachsenen. Therapeutische Regression hingegen ist ein asexueller Schutzmechanismus. In diesem Lexikon ziehen wir hier eine unüberwindbare Grenze.
+Dies ist die wichtigste Unterscheidung: Altersregression in diesem Sinne ist **niemals sexuell**. Konzepte wie "Ageplay" oder "ABDL" stammen aus der Kink- und BDSM-Szene und basieren auf sexuellem Konsens und Rollenspielen zwischen Erwachsenen. Therapeutische Regression hingegen ist ein asexueller Schutzmechanismus. In diesem Lexikon ziehen wir hier eine unüberwindbare Grenze. Mehr dazu: [SFW vs. NSFW](/grundlagen/sfw-und-nsfw)
 
 ### 3. Kein Realitätsverlust (Psychose)
 Wer regrediert, verliert in der Regel nicht den Kontakt zur Realität. Die meisten Betroffenen erleben eine sogenannte "Co-Consciousness" (Mit-Bewusstsein). Das bedeutet, ein kleiner Teil des erwachsenen Ichs bleibt im Hintergrund präsent und weiß, wer man ist und wo man sich befindet – auch wenn das emotionale Erleben komplett kindlich ist.
@@ -57,5 +57,7 @@ Oft wird Regression als "Flucht vor der Verantwortung" missverstanden. Tatsächl
 
 ---
 
-### Zusammenfassung: Der "Safe Space"
+### Zusammenfassung: Der Safe Space
 Regression ist ein **natürlicher, menschlicher Mechanismus**. Sie ist ein Rückzugsort für die Seele, um Kraft zu tanken, Wunden zu heilen und das Nervensystem zu beruhigen. Solange dieser Raum konsequent SFW und sicher gestaltet wird, ist er ein wertvoller Teil der psychischen Gesundheit.
+
+→ [Was ist ein Little?](/rollen/little) | [Die Caregiver-Rolle](/rollen/caregiver) | [Pet Regression](/grundlagen/pet-regression) | [Therapeutischer Nutzen](/grundlagen/therapeutischer-nutzen)

@@ -36,6 +36,6 @@ Obwohl Pet Regression für Außenstehende ungewöhnlich erscheinen mag, kann sie
 Es ist wichtig, Pet Regression von anderen, ähnlichen Konzepten zu unterscheiden:
 
 - **Furry-Fandom:** Während es Überschneidungen geben kann, konzentriert sich das Furry-Fandom hauptsächlich auf das Interesse an anthropomorphen Tiercharakteren und das Tragen von Fursuits. Pet Regression ist hingegen ein psychologischer Zustand.
-- **BDSM:** Pet Play ist eine Form des Rollenspiels innerhalb der BDSM-Community, die oft Machtdynamiken beinhaltet. Pet Regression ist nicht zwangsläufig sexuell und kann rein therapeutischer oder emotionaler Natur sein.
+- **BDSM:** Pet Play ist eine Form des Rollenspiels innerhalb der BDSM-Community, die oft Machtdynamiken beinhaltet. Pet-Play ist nicht zwangsläufig sexuell und kann rein therapeutischer oder emotionaler Natur sein.
 
 Zusammenfassend lässt sich sagen, dass Pet Regression eine komplexe und vielschichtige Form der Regression ist, die als wertvoller Bewältigungsmechanismus dienen kann. Wie bei allen Formen der Regression ist es entscheidend, dass sie in einer sicheren und unterstützenden Umgebung praktiziert wird.
